@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>宇高昊弥 — 自己紹介</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --radius:12px;
+      font-family: "Hiragino Kaku Gothic Pro","Noto Sans JP",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #eef2ff 0%, var(--bg) 40%);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      width:100%;
+      max-width:900px;
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      gap:24px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      padding:20px;
+    }
+    .avatar{
+      width:100%;
+      height:260px;
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#e0f2fe,#eef2ff);
+      color:var(--accent);
+      font-weight:700;
+      font-size:40px;
+      letter-spacing:1px;
+    }
+    h1{
+      margin:0 0 6px 0;
+      font-size:22px;
+    }
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .meta { margin-top:14px; font-size:14px; color:var(--muted); }
+    .section { margin-bottom:18px; }
+    .skills { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .skill {
+      background:#f1f5f9;
+      color:#0f172a;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+    }
+    .button{
+      display:inline-block;
+      margin-top:12px;
+      background:var(--accent);
+      color:white;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .contact-list { list-style:none; padding:0; margin:10px 0 0 0; }
+    .contact-list li { margin-bottom:8px; font-size:14px; color:var(--muted); }
+    footer { text-align:center; color:var(--muted); font-size:13px; margin-top:18px; }
+    @media (max-width:800px){
+      .container{ grid-template-columns: 1fr; padding:0 8px; }
+      .avatar{ height:180px; font-size:32px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="name">
+    <!-- 左カラム -->
+    <aside class="card" aria-label="プロフィール">
+      <div class="avatar" aria-hidden="true">U.A</div>
+      <h1 id="name">宇高 昊弥（うたか こうや）</h1>
+      <p class="subtitle">クリエイティブ×テクノロジー | 学び好きなフルスタック志向</p>
+
+      <div class="meta section">
+        <strong>所在地</strong>
+        <div>日本（東京ベース）</div>
+      </div>
+
+      <div class="section">
+        <strong>スキル</strong>
+        <div class="skills" aria-hidden="false">
+          <span class="skill">HTML/CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">UI/UX</span>
+          <span class="skill">デザイン思考</span>
+          <span class="skill">写真撮影</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <strong>連絡先</strong>
+        <ul class="contact-list">
+          <li>メール: <a href="mailto:koya.utaka@example.com">koya.utaka@example.com</a></li>
+          <li>Twitter: <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">@koya_utk</a></li>
+        </ul>
+        <a class="button" href="#work">もっと見る</a>
+      </div>
+    </aside>
+
+    <!-- 右カラム -->
+    <section class="card" aria-label="紹介文">
+      <div class="section">
+        <h2 style="margin-top:0">自己紹介</h2>
+        <p>
+          はじめまして、宇高昊弥（うたか こうや）です。大学では情報デザインを専攻し、ウェブ制作やプロダクトデザインを中心に活動してきました。テクノロジーとデザインの融合を通じて、人の毎日をちょっと良くするプロダクトを作ることが好きです。
+        </p>
+      </div>
+
+      <div id="work" class="section">
+        <h3>最近の取り組み</h3>
+        <ul>
+          <li>個人プロジェクトでポートフォリオサイトをフロントから構築（React + 静的ホスティング）</li>
+          <li>地域イベントのWebデザインをボランティアで担当、来場者のUX改善に貢献</li>
+          <li>写真撮影と簡単な映像編集を学び、SNSで発信中</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>趣味・好きなこと</h3>
+        <p>
+        音楽全般
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>モットー</h3>
+        <blockquote style="margin:0;font-style:italic;color:var(--muted);">
+          「まず試して、学んで、また直す」 — 手を動かして経験を増やすことを大切にしています。
+        </blockquote>
+      </div>
+
+      <footer>
+        簡単な自己紹介ページでした。ご覧いただきありがとうございます。
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
